@@ -5,26 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AquaFit | Landing Page</title>
-
-    <!-- Arquivo de estilo do framework Bootstrap -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
-
-    <!-- Arquivo de estilo do plugin Swiper para slides -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!--! <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Arquivo de estilo para o conjunto de ícones Line Awesome -->
+    <script src="./js/cookies.js"></script>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    <!-- Arquivo de estilo do plugin AOS para animações de rolagem -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Arquivo de estilo personalizado da página -->
-    <link rel="stylesheet" href="/css/app.css">
 </head>
 
-<body id="top">
-    <!-- Navbar Start-->
+<body id="top" oncontextmenu="return false;">
+    <!-- div de progresso -->
+    <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <!--! Navbar Start-->
     <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
         <!-- ! Define uma tag de navegação com várias classes de estilo do Bootstrap -->
         <div class="container">
@@ -37,11 +37,11 @@
             </button>
             <!-- ? Define um botão de alternância com classe "navbar-toggler" para dispositivos móveis -->
             <div class="collapse navbar-collapse" id="navbarColor02">
-                <!-- ? Define um elemento que pode ser ocultado em telas menores e expande o menu de navegação quando o -->
-                botão de alternância é clicado
+                <!-- ? Define um elemento que pode ser ocultado em telas menores e expande o menu de navegação quando o
+                ? botão de alternância é clicado -->
                 <ul class="navbar-nav ms-auto">
                     <!-- * Define uma lista de navegação com a classe "navbar-nav" e alinha à direita com a classe
-                     "ms-auto" -->
+                    "ms-auto" -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Inicio</a>
                         <!-- ! Define um link para a seção "Inicio" do site -->
@@ -54,7 +54,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Instrutores</a>
-                        <!-- ! Define um link para a seção "Instrutores" do site -->
+                        <!-- /! Define um link para a seção "Instrutores" do site -->
                     </li>
 
                     <li class="nav-item">
@@ -68,40 +68,40 @@
                     </li>
 
                     <a href="./page/treino.html" class="btn btn-warning ms-lg-3"> Meu treino</a>
-                    <!--  ? Define um botão com um link para um arquivo HTML em "./page/treino.html" -->
+                    <!-- ? Define um botão com um link para um arquivo HTML em "./page/treino.html" -->
                 </ul>
             </div>
         </div>
-    </nav><!-- Navbar end-->
+    </nav>
 
-
-    <!-- Hero Start-->
-    <section id="hero" class="min-vh-100 d-grid align-content-center py-1">
+    <!--TODO: Navbar end-->
+    <!--! Hero Start-->
+    <section id="hero" class=" d-grid align-content-center py-1">
         <!-- Container -->
-        <div class="container py-1 mb-0">
+        <div class="container py-0 mb-0">
             <!-- Row -->
             <div class="row gy-4 align-items-center">
                 <!-- Col -->
-                <div class="col-lg-5 mb-0" data-aos="fade-up-right">
-                    <img src="/Img/teste002.png" alt="hero" class="img-fluid">
+                <div class="col-lg-5 mb-0" data-aos="zoom-in">
+                    <img src="./Img/teste002.png" alt="hero" class="img-fluid">
                 </div>
                 <div class="col-lg-7 px-lg-5">
-                    <h1 class="h3" data-aos="fade-up-left">"Seja a melhor versão de si mesmo na academia AquaFit"</h1>
-                    <p class="mt-3 mb-4" data-aos="fade-up-left">Cuidar da saúde é fundamental para uma vida plena e
+                    <h1 class="h3" data-aos="zoom-in">"Seja a melhor versão de si mesmo na academia AquaFit"</h1>
+                    <p class="mt-0 mb-3" data-aos="zoom-in">Cuidar da saúde é fundamental para uma vida plena e
                         feliz. Além dos benefícios
                         físicos,
                         cuidar da saúde também impacta
                         positivamente a saúde mental, contribuindo para um bem-estar geral.</p>
                     <div>
-                        <a href="#" class="btn btn-outline-warning mb-4" data-aos="fade-up-left"> MATRICULE-SE </a>
+                        <a href="#" class="btn btn-outline-warning mb-4"> MATRICULE-SE </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Hero End-->
+    <!--TODO: Hero End-->
 
-    <!-- service strart -->
+    <!--! service strart -->
     <section id="services" class="py-5 bg-2 ">
         <!-- container -->
         <div class="container min-vh-100 mw">
@@ -187,9 +187,9 @@
 
         </div>
     </section>
-    <!-- Service end -->
+    <!--TODO: Service end -->
 
-    <!-- Espace strart -->
+    <!--! Espace strart -->
     <section id="espace" class="py-5 bg-2">
         <!-- container -->
         <div class="container min-vh-100 mw" data-aos="fade-up-left" data-aos-duration=" 4000">
@@ -214,7 +214,7 @@
                     <!-- Slide -->
                     <div class="swiper-slide">
                         <div class="project p-4 border-custom">
-                            <img src="/Img/espaço01.jpg" alt="portfolio-01" class="img-fluid">
+                            <img src="./Img/espaço01.jpg" alt="portfolio-01" class="img-fluid">
                             <div class="overlay">
                                 <h4 class="h5"> Espaço 01</h4>
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, a.
@@ -225,7 +225,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="project p-4 border-custom">
-                            <img src="/Img/espaço02.jpg" alt="portfolio-01" class="img-fluid">
+                            <img src="./Img/espaço02.jpg" alt="portfolio-01" class="img-fluid">
                             <div class="overlay">
                                 <h4 class="h5"> Espaço 01</h4>
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, a.
@@ -236,7 +236,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="project p-4 border-custom">
-                            <img src="/Img/espaço03.jpg" alt="portfolio-01" class="img-fluid">
+                            <img src="./Img/espaço03.jpg" alt="portfolio-01" class="img-fluid">
                             <div class="overlay">
                                 <h4 class="h5"> Espaço 01</h4>
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, a.
@@ -247,7 +247,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="project p-4 border-custom">
-                            <img src="/Img/espaço04.jpg" alt="portfolio-01" class="img-fluid">
+                            <img src="./Img/espaço04.jpg" alt="portfolio-01" class="img-fluid">
                             <div class="overlay">
                                 <h4 class="h5"> Espaço 01</h4>
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, a.
@@ -259,7 +259,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="project p-4 border-custom">
-                            <img src="/Img/portfolio-02.jpg" alt="portfolio-01" class="img-fluid">
+                            <img src="./Img/portfolio-02.jpg" alt="portfolio-01" class="img-fluid">
                             <div class="overlay">
                                 <h4 class="h5"> Espaço 01</h4>
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, a.
@@ -277,9 +277,9 @@
 
         </div>
     </section>
-    <!-- Service end -->
+    <!--TODO: Service end -->
 
-    <!-- review strart -->
+    <!--! review strart -->
     <section id="reviews" class="py-5">
         <!-- container -->
         <div class="container min-vh-100 mw">
@@ -303,7 +303,7 @@
                     <!-- Slide -->
                     <div class="swiper-slide">
                         <div class="review p-4 border-custom">
-                            <img src="/Img/team-002.jpg" alt="team-01">
+                            <img src="./Img/team-002.jpg" alt="team-01">
                             <p class="my-3">"Estou muito satisfeita com a academia que frequento! A equipe é super
                                 atenciosa e sempre disposta a ajudar, além disso, as instalações são modernas e bem
                                 cuidadas. Graças a isso, consegui atingir meus objetivos de forma saudável e divertida."
@@ -315,7 +315,7 @@
                     <!-- Slide -->
                     <div class="swiper-slide d-grid">
                         <div class="review p-4 border-custom ">
-                            <img src="/Img/team-001.jpg" alt="team-01">
+                            <img src="./Img/team-001.jpg" alt="team-01">
                             <p class="my-3">"Sou cliente dessa academia há alguns anos e posso dizer com certeza que é a
                                 melhor que já frequentei! Além de oferecer equipamentos de última geração, também
                                 valoriza muito o bem-estar dos clientes, com ambientes agradáveis e uma equipe
@@ -327,7 +327,7 @@
                     <!-- Slide -->
                     <div class="swiper-slide">
                         <div class="review p-4 border-custom">
-                            <img src="/Img/team-03.jpg" alt="team-01">
+                            <img src="./Img/team-03.jpg" alt="team-01">
                             <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ad nam
                                 aspernatur
                                 quibusdam fugiat beatae fugit reiciendis! Possimus doloremque voluptatum, maxime
@@ -339,7 +339,7 @@
                     <!-- Slide -->
                     <div class="swiper-slide">
                         <div class="review p-4 border-custom">
-                            <img src="/Img/team-04.jpg" alt="team-01">
+                            <img src="./Img/team-04.jpg" alt="team-01">
                             <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ad nam
                                 aspernatur
                                 quibusdam fugiat beatae fugit reiciendis! Possimus doloremque voluptatum, maxime
@@ -355,9 +355,9 @@
             <!-- Swiper JS -->
         </div>
     </section>
-    <!-- Review end -->
+    <!--TODO: Review end -->
 
-    <!-- Team strart -->
+    <!--! Team strart -->
     <section id="team" class="py-5 bg-2">
         <!-- container -->
         <div class="container min-vh-100 mw">
@@ -382,7 +382,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="team-member border-custom py-3">
                         <div class="team-head p-3">
-                            <img src="/Img/team-01.jpg" class="img-fluid mb-3" alt="team-01">
+                            <img src="./Img/team-01.jpg" class="img-fluid mb-3" alt="team-01">
                             <small class="text-warning">Personal trainer</small>
                             <h5 class="mb-0"> VIcttor santos</h5>
                         </div>
@@ -399,7 +399,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="team-member border-custom py-3">
                         <div class="team-head p-3">
-                            <img src="/Img/team-02.jpg" class="img-fluid mb-3" alt="team-01">
+                            <img src="./Img/team-02.jpg" class="img-fluid mb-3" alt="team-01">
                             <small class="text-warning">Personal trainer</small>
                             <h5 class="mb-0"> VIcttor santos</h5>
                         </div>
@@ -416,7 +416,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="team-member border-custom py-3">
                         <div class="team-head p-3">
-                            <img src="/Img/team-03.jpg" class="img-fluid mb-3" alt="team-01">
+                            <img src="./Img/team-03.jpg" class="img-fluid mb-3" alt="team-01">
                             <small class="text-warning">Personal trainer</small>
                             <h5 class="mb-0"> VIcttor santos</h5>
                         </div>
@@ -433,7 +433,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="team-member border-custom py-3">
                         <div class="team-head p-3">
-                            <img src="/Img/team-04.jpg" class="img-fluid mb-3" alt="team-01">
+                            <img src="./Img/team-04.jpg" class="img-fluid mb-3" alt="team-01">
                             <small class="text-warning">Personal trainer</small>
                             <h5 class="mb-0"> VIcttor santos</h5>
                         </div>
@@ -451,9 +451,9 @@
 
         </div>
     </section>
-    <!-- team end -->
+    <!--TODO: team end -->
 
-    <!-- contato strart -->
+    <!--! contato strart -->
     <section id="contato" class="py-5">
         <!-- container -->
         <div class="container min-vh-100 mw">
@@ -499,20 +499,20 @@
 
                 <!-- Col-2 -->
                 <div class="col-lg-6 p-4 border-custom">
-                    <form action="#">
+                    <form method="post" action="send_email.php">
                         <div class="mb-3">
                             <label class="mb-2" for="name">Nome</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="name" class="form-control" required>
                         </div>
                         <div class="mb-3">
                             <label class="mb-2" for="email">Email</label>
-                            <input type="email" class="form-control">
+                            <input type="email" name="email" class="form-control" required>
                         </div>
                         <div class="mb-3">
                             <label class="mb-2" for="mensagem">Mensagem</label>
-                            <textarea name="" id="#" rows="4" class="form-control"></textarea>
+                            <textarea name="message" id="#" rows="4" class="form-control" required></textarea>
                         </div>
-                        <button class="btn btn-warning">Enviar</i></button>
+                        <button type="submit" name="submit" class="btn btn-warning">Enviar</button>
                     </form>
                 </div>
 
@@ -520,10 +520,10 @@
 
         </div>
     </section>
-    <!-- contato end -->
+    <!--TODO: contato end -->
 
-    <!-- footer -->
-    <footer>
+
+    <footer><!--! footer -->
         <div class="container">
 
             <!-- row -->
@@ -563,18 +563,37 @@
             </div>
         </div>
 
-    </footer>
-    <!-- end footer -->
+    </footer><!--TODO: end footer -->
+
+    <!--! Modal dos cookies -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-bottom">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Política de Cookies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nós utilizamos cookies para melhorar a sua experiência no nosso site. Ao clicar em "Aceitar",
+                        você concorda com o uso de cookies.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button id="acceptCookies" type="button" class="btn btn-primary">Aceitar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TODO: fim do modal -->
+
+
 
     <!-- scroll -->
-
-    <!-- <a href="#top" class="icon scroll-to-top"><i class="las la-arrow-up"></i></a> -->
-
-
-    <script src="/js/bootstrap.bundle.min.js"></script>
+    <a href="#top" class="icon scroll-to-top"><i class="las la-arrow-up"></i></a>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

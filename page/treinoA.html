@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AquaFit | Treino B</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../js/app2.js">
+
+</head>
+
+<body id="top" oncontextmenu="return false;"
+    onbeforeunload="return 'Tem certeza de que deseja sair desta página? Todos os dados não salvos serão perdidos.'">
+
+    <div class="progress"> <!-- Inicio da barra de progresso -->
+        <span class="bar"></span>
+    </div> <!-- Fim da barra de progresso -->
+
+    <!-- Navbar Start-->
+    <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <h4 class="logo">AquaFit.</h4>
+        </div>
+    </nav>
+
+    <div class="container-fluid ml-2 mt-3"><!-- Atalho para menu princial -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="../page/treino.html">Meu treino</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Treino A</li>
+            </ol>
+        </nav>
+    </div><!-- Fim atalho para menu princial -->
+
+    <div class="container-fluid ml-2 mt-3"><!-- Recomendação de aquecimento diario antes do treino -->
+        <div class="accordion container-fluid mb-3" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h6 class="text-sm-end m-2 text-muted">Alongar e aquecer antes do treino.</h6>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class=" m-2 text-monospace">
+                            Um bom aquecimento antes de um treino de peito e tríceps pode ajudar a preparar os músculos
+                            para
+                            o esforço físico e reduzir o risco de lesões. Aqui estão algumas dicas de aquecimento para o
+                            treino de peito e tríceps:<br>
+                            <br>
+                            Comece com exercícios cardiovasculares leves, como caminhada, corrida ou bicicleta
+                            estacionária,
+                            por cerca de 5 a 10 minutos. Isso ajuda a elevar a frequência cardíaca e aumentar o fluxo
+                            sanguíneo para os músculos.<br>
+                            <br>
+                            Faça alguns exercícios de mobilidade articular para os ombros e cotovelos, como rotações de
+                            ombros, flexões de cotovelos ou extensões de cotovelos. Isso ajuda a preparar as
+                            articulações e
+                            músculos para os movimentos que serão realizados durante o treino.<br>
+                            <br>
+                            Realize alguns exercícios de aquecimento específicos para os músculos do peito e tríceps.
+                            Por
+                            exemplo, flexões com as mãos apoiadas em um banco, ou extensões de tríceps com um peso
+                            leve.<br>
+                            <br>
+                            Finalize o aquecimento com algumas séries leves dos primeiros exercícios que serão
+                            realizados no
+                            treino, com um peso menor do que o normal. Isso ajuda a preparar ainda mais os músculos para
+                            o
+                            treino intenso que virá a seguir.
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim da recomendação de aquecimento diario antes do treino -->
+
+    <div class="container"><!-- Inicio dos cards -->
+
+        <div class="row"> <!-- Inicio da linha principal -->
+
+            <div class="container"><!-- Inicio do container que engloba o treino principal -->
+
+                <div class="row"><!-- Inicio da linha que engloba o treino principal -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card1"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/supino-reto.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Supino reto barra</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card1', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseSupinoHalteres" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseSupinoHalteres">
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">Sentar em um
+                                        banco reto com um halter em cada uma das coxas. Com o auxílio das pernas, subir
+                                        os pesos ao mesmo tempo em que deita o corpo para trás, firmando bem as costas e
+                                        os glúteos no banco. Com os cotovelos estendidos, segurar um halter deitado em
+                                        cada mão. A pegada deve ser com os polegares voltados para o lado de dentro. Um
+                                        deve estar próximo ao outro, com ambos na altura do peito. Descer os halteres de
+                                        modo controlado, fazendo o movimento de flexão dos cotovelos até que as cargas
+                                        alcancem a altura do peito. Durante a execução desta parte, alongar bem os
+                                        músculos do peitoral.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card2"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/supino-inclinado-com-barra.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Supino inclinado barra</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card2', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard2" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard2">
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O supino
+                                        inclinado com barra é um exercício de levantamento de peso que é semelhante ao
+                                        supino reto, mas com o banco inclinado em um ângulo de cerca de 30 a 45 graus.
+                                        Nesse exercício, você deita no banco inclinado e levanta a barra com as mãos
+                                        posicionadas um pouco mais do que a largura dos ombros até que os braços estejam
+                                        totalmente estendidos e, em seguida, abaixa a barra até o peito e repete o
+                                        movimento. O supino inclinado com barra trabalha principalmente os músculos
+                                        superiores do peito, mas também envolve os ombros e os tríceps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card3"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="https://via.placeholder.com/350x200.png?text=Imagem+indisponível"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Supino declinado</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card3', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard3" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard3">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O supino
+                                        declinado com barra é um exercício de levantamento de peso em que você
+                                        deita em um banco declinado com os pés presos, de modo que sua cabeça fique mais
+                                        baixa do que os pés. Nesse exercício, você levanta a barra com as mãos
+                                        posicionadas
+                                        um pouco mais do que a largura dos ombros até que os braços estejam totalmente
+                                        estendidos e, em seguida, abaixa a barra até o peito e repete o movimento. O
+                                        supino
+                                        declinado com barra trabalha principalmente os músculos inferiores do peito, mas
+                                        também envolve os tríceps e os ombros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card4"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/voador-no-aparelho.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Peck deck</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card4', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard4" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard4">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">Peck deck é
+                                        um equipamento de musculação que tem como objetivo principal trabalhar
+                                        os músculos do peito, mais especificamente os músculos peitorais maiores. É
+                                        composto
+                                        por uma estrutura com duas asas acolchoadas e ajustáveis, onde se senta e
+                                        coloca-se
+                                        os antebraços sobre as asas. Em seguida, as asas são trazidas para a frente em
+                                        um
+                                        movimento controlado, expirando, e então lentamente retornadas à posição
+                                        inicial,
+                                        inspirando. O peck deck é um exercício comum em academias e pode ajudar a
+                                        aumentar a
+                                        força e o tamanho dos músculos do peito. É importante executar o exercício
+                                        corretamente para evitar lesões e obter os melhores resultados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card5"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/triceps-puxada-no-pulley.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Triceps barra pulley</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card5', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard5" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard5">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O Tríceps
+                                        Barra Pulley é um exercício de levantamento de peso que visa trabalhar os
+                                        músculos do tríceps. Neste exercício, você usa um cabo preso a uma máquina de
+                                        polia
+                                        alta e uma barra em forma de "V" para realizar o movimento. Você segura a barra
+                                        com
+                                        as mãos em uma posição próxima, com as palmas voltadas uma para a outra e os
+                                        braços
+                                        estendidos. Em seguida, você puxa a barra para baixo em direção às coxas,
+                                        mantendo
+                                        os cotovelos perto do corpo e os braços retos. Depois, você volta a barra para a
+                                        posição inicial, controlando o movimento. Esse exercício é eficaz para
+                                        desenvolver e
+                                        fortalecer os músculos do tríceps, especialmente a porção lateral dos mesmos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card6"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/triceps-puxada-no-pulley-com-corda.webp" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Triceps corda</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card6', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard6" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard6">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O tríceps
+                                        com corda é um exercício de levantamento de peso que visa trabalhar os músculos
+                                        do tríceps. Neste exercício, você usa uma corda presa a uma máquina de polia
+                                        alta. Você segura a corda com as mãos em posição neutra, com as palmas voltadas
+                                        uma para a outra e os braços estendidos. Em seguida, você puxa a corda para
+                                        baixo em direção às coxas, mantendo os cotovelos perto do corpo e os braços
+                                        retos. Conforme você puxa a corda para baixo, suas mãos se movem para fora,
+                                        separando-se uma da outra, o que é útil para trabalhar a porção medial dos
+                                        músculos do tríceps. Depois, você volta a corda para a posição inicial,
+                                        controlando o movimento. Esse exercício é eficaz para desenvolver e fortalecer
+                                        os músculos do tríceps, especialmente a porção medial dos mesmos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card7"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/triceps-nuca-com-halter.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Triceps Francês</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card7', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard7" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard7">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O tríceps
+                                        francês, também conhecido como extensão de tríceps com halteres, é um exercício
+                                        de levantamento de peso que visa trabalhar os músculos do tríceps. Neste
+                                        exercício, você se deita em um banco plano com um halter em uma mão. Você segura
+                                        o halter acima do seu peito, com o braço estendido e o cotovelo travado. Em
+                                        seguida, você abaixa o halter em direção à sua testa, dobrando o cotovelo e
+                                        mantendo o braço próximo à cabeça. Depois, você estende o braço novamente e
+                                        retorna o halter à posição inicial. Esse exercício é eficaz para desenvolver e
+                                        fortalecer os músculos do tríceps, especialmente a porção lateral dos mesmos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card8"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/triceps-no-banco.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Triceps banco</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card8', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard8" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard8">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O tríceps no
+                                        banco, também conhecido como extensão de tríceps no banco, é um exercício de
+                                        levantamento de peso que visa trabalhar os músculos do tríceps. Neste exercício,
+                                        você se senta em um banco e segura um halter com as duas mãos atrás da cabeça,
+                                        com os cotovelos dobrados em um ângulo de 90 graus. Em seguida, você estende os
+                                        braços, levantando o halter para cima, até que os braços estejam totalmente
+                                        estendidos e, em seguida, abaixa o halter de volta à posição inicial,
+                                        controlando o movimento. Esse exercício é eficaz para desenvolver e fortalecer
+                                        os músculos do tríceps, especialmente a porção medial dos mesmos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                </div><!-- Inicio da linha que engloba o treino principal -->
+
+            </div><!-- Fim do container que engloba o treino principal -->
+
+        </div><!-- Fim da linha principal -->
+
+    </div> <!-- Fim dos cards de treino principal -->
+
+
+    <div class="container-fluid"><!-- container abdominal -->
+        <h4 class="bg-2 p-4 mb-3 text-muted h5">Abdominal.</h4>
+    </div> <!-- container abdominal -->
+
+    <section>
+        <div class="container"><!-- Inicio dos cards -->
+
+            <div class="row"> <!-- Inicio da linha Abdominal -->
+
+                <div class="container"><!-- Inicio do container que engloba o treino Abdominal -->
+
+                    <div class="row"><!-- Inicio da linha que engloba o treino Abdominal -->
+
+                        <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                            <div class="card mt-3 mb-3 " id="card9"> <!-- sempre lembrar de alterar o id "Card"-->
+                                <img src="../Img/imgtreino/abdominal-no-chao-com-elevacao-de-pernas-semi-dobradas.webp"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 h4 text-align-star">Elevação de pernas (zig-zag).</h5>
+                                    <p class="card-text text-warning m-0 h5">3 X 20</p>
+                                    <div class="m-0 text-muted h6">
+                                        <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 4 min.</p>
+                                        <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                            postura.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <button type="button" class="btn btn-warning"
+                                            onclick="changeBorderColor('card9', this)">Finalizar
+                                            exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                        <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                            href="#collapseCard9" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">Como executar</a>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapseCard9">
+                                    <div class="card card-body">
+                                        <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                            O abdominal levantamento de pernas é um exercício que tem como objetivo
+                                            trabalhar os músculos abdominais inferiores. É realizado deitado em um
+                                            colchonete, com as pernas estendidas e os braços apoiados no chão ao lado do
+                                            corpo. A partir dessa posição, as pernas são levantadas juntas em direção ao
+                                            teto, mantendo-as retas ou ligeiramente flexionadas nos joelhos. Os músculos
+                                            abdominais são contraídos para manter o controle do movimento enquanto as
+                                            pernas
+                                            são abaixadas lentamente até a posição inicial.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                        <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                            <div class="card mt-3 mb-3 " id="card10"> <!-- sempre lembrar de alterar o id "Card"-->
+                                <img src="../Img/imgtreino/abdominal-bicicleta-no-ar.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 h4 text-align-star">Abdominal bicicleta</h5>
+                                    <p class="card-text text-warning m-0 h5">3 X 20</p>
+                                    <div class="m-0 text-muted h6">
+                                        <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 4 min.</p>
+                                        <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                            postura.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <button type="button" class="btn btn-warning"
+                                            onclick="changeBorderColor('card10', this)">Finalizar
+                                            exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                        <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                            href="#collapseCard10" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">Como executar</a>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapseCard10">
+                                    <div class="card card-body">
+                                        <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                            Como fazer:
+                                            - Primeiro, deite-se sobre um banco plano, ou até mesmo sobre o chão. Caso
+                                            queira, utilize um colchonete;
+                                            - Em seguida, junte as duas pernas e levante-as levemente;
+                                            - Então, flexione-as levemente e mantenha as mãos atrás da cabeça. Forme um
+                                            ângulo de 90 graus com uma das pernas, enquanto mantém a outra perna próxima
+                                            ao
+                                            chão, mas sem tocá-lo;
+                                            - Depois, leve o cotovelo oposto à perna flexionada em direção ao peito;
+                                            Repita
+                                            os movimentos como se estivesse simulando andar bicicleta.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    </div><!-- Inicio da linha que engloba o treino Abdominal -->
+
+                </div><!-- Fim do container que engloba o treino Abdominal -->
+
+            </div><!-- Fim da linha Abdominal -->
+
+        </div> <!-- Fim dos cards de treino Abdominal -->
+    </section>
+
+
+    <a href="#top" class="icon scroll-to-top"><i class="las la-arrow-up"></i></a>
+
+    <footer class="bg-light"><!-- container Desenvolvedor-->
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    Desenvolvido por<a href="https://www.instagram.com/victtorsantos3l/" class="text-muted">
+                        Victtor Santos</a>
+                </div>
+            </div>
+        </div>
+    </footer><!-- container Desenvolvedor -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/app2.js"></script>
+</body>
+
+</html>

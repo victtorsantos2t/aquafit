@@ -1,4 +1,3 @@
-
 const scrollToTop = document.querySelector('.scroll-to-top')
 window.addEventListener('scroll', () => {
     if(window.scrollY >300){
@@ -36,3 +35,16 @@ var swiper = new Swiper(".mySwiper", {
 
 //   aos
 AOS.init();
+
+const body= document.body;
+const bar = document.querySelector('.bar');
+
+const updateBar=()=>{
+  let scrollPos = (window.scrollY / 
+  (body.scrollHeight - window.innerHeight))*100;
+  bar.style.width =`${scrollPos}%`;
+  requestAnimationFrame(updateBar);
+};
+updateBar()
+
+
