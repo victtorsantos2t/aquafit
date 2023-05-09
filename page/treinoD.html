@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AquaFit | Treino D</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../js/app2.js">
+
+</head>
+
+<body id="top" oncontextmenu="return false;"
+    onbeforeunload="return 'Tem certeza de que deseja sair desta página? Todos os dados não salvos serão perdidos.'">
+
+    <div class="progress"> <!-- Inicio da barra de progresso -->
+        <span class="bar"></span>
+    </div> <!-- Fim da barra de progresso -->
+
+    <!-- Navbar Start-->
+    <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <h4 class="logo">AquaFit.</h4>
+        </div>
+    </nav>
+
+    <div class="container-fluid ml-2 mt-3"><!-- Atalho para menu princial -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="../page/treino.html">Meu treino</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Treino D</li>
+            </ol>
+        </nav>
+    </div><!-- Fim atalho para menu princial -->
+
+    <div class="container-fluid ml-2 mt-3"><!-- Recomendação de aquecimento diario antes do treino -->
+        <div class="accordion container-fluid mb-3" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h6 class="text-sm-end m-2 text-muted">Alongar e aquecer antes do treino.</h6>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class=" m-2 text-monospace">
+                            1- O aquecimento é uma parte importante de qualquer treino ou atividade física, pois ajuda a
+                            preparar o corpo para o exercício, aumentando a temperatura corporal, a frequência cardíaca
+                            e a respiração. Aqui está uma descrição de um aquecimento eficaz que você pode fazer antes
+                            do treino:<br>
+                            2- Em seguida, faça alguns exercícios de mobilidade articular, como círculos com os braços,
+                            rotações de quadril, agachamentos com peso corporal e lunges (avanços) para preparar as
+                            articulações para o movimento.<br>
+                            3- Depois disso, faça alguns exercícios específicos para os músculos que você estará
+                            trabalhando no treino, mas com uma intensidade mais baixa do que o treino em si. Por
+                            exemplo, se você estiver treinando as pernas, faça alguns agachamentos com peso corporal ou
+                            lunges com um peso leve para preparar os músculos das pernas.<br>
+
+                            4- Finalize com alguns exercícios de alongamento para ajudar a relaxar os músculos e
+                            aumentar
+                            a
+                            flexibilidade. Segure cada posição de alongamento por cerca de 20 a 30 segundos.<br>
+                            <br>
+                            <span class="text-danger">Lembre-se de não exagerar no aquecimento e de fazer apenas o que
+                                for confortável para o seu corpo. O objetivo é preparar o corpo para o treino e evitar
+                                lesões, não cansá-lo antes do treino. Se você estiver se sentindo cansado ou com dor
+                                durante o aquecimento, pare e descanse por alguns minutos antes de continuar.
+                            </span>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim da recomendação de aquecimento diario antes do treino -->
+
+    <div class="container"><!-- Inicio dos cards -->
+
+        <div class="row"> <!-- Inicio da linha principal -->
+
+            <div class="container"><!-- Inicio do container que engloba o treino principal -->
+
+                <div class="row"><!-- Inicio da linha que engloba o treino principal -->
+
+                    <div class="col-md-3 max-w-sm max-h-sm">
+                        <!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card01"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/Seated-Cable-Row.gif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Puxador "pegada aberta" </h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card01', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard001" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard001">
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                        O leg press 45º é um exercício de musculação realizado em uma máquina
+                                        específica,
+                                        que trabalha principalmente os músculos das pernas, como quadríceps, glúteos,
+                                        isquiotibiais e panturrilhas.<br>
+                                        <br>
+                                        Para realizar o exercício, o indivíduo deve sentar-se na máquina com as costas
+                                        apoiadas no encosto e os pés na plataforma posicionada a um ângulo de 45 graus.
+                                        Em
+                                        seguida, ele deve empurrar a plataforma com os pés até estender completamente as
+                                        pernas e depois retornar à posição inicial controladamente, mantendo a contração
+                                        dos
+                                        músculos das pernas durante todo o movimento.<br>
+                                        <br>
+                                        O leg press 45º pode ser realizado com diferentes cargas e variações de posição
+                                        dos
+                                        pés na plataforma, permitindo a ênfase em diferentes grupos musculares das
+                                        pernas. É
+                                        importante lembrar de manter uma boa postura e técnica adequada durante o
+                                        exercício
+                                        para evitar lesões e maximizar os resultados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card02"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/close-grip-cable-row.gif" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Puxador "pegada fechada"</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card02', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard02" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard02">
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">A cadeira
+                                        extensora é um equipamento de musculação utilizado para trabalhar os músculos
+                                        extensores do joelho, principalmente o quadríceps femoral.<br>
+
+                                        O exercício é realizado sentado na cadeira, com as pernas penduradas na parte de
+                                        trás do equipamento e os joelhos flexionados em um ângulo de cerca de 90 graus.
+                                        O indivíduo deve então empurrar a plataforma com os pés até estender
+                                        completamente os joelhos, contraindo os músculos do quadríceps. Em seguida, deve
+                                        retornar à posição inicial controladamente.<br>
+
+                                        O exercício pode ser ajustado para diferentes níveis de resistência, de acordo
+                                        com a carga selecionada na máquina. Além disso, a posição dos pés pode ser
+                                        variada para enfatizar diferentes músculos do quadríceps.<br>
+
+                                        É importante lembrar de manter uma boa postura e técnica adequada durante o
+                                        exercício para evitar lesões e maximizar os resultados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card3"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/close-grip-cable-row.gif" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Remada no cross</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card3', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard3" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard3">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O leg
+                                        horizontal é um exercício de musculação que visa principalmente os músculos dos
+                                        glúteos e das pernas, como quadríceps, isquiotibiais e glúteos médio e
+                                        máximo.<br>
+
+                                        Para realizar o exercício, o indivíduo deve se deitar de barriga para baixo em
+                                        um banco específico para o exercício, com os quadris apoiados na parte estreita
+                                        do banco e as pernas penduradas para baixo. Em seguida, ele deve levantar as
+                                        pernas estendidas para cima, mantendo os joelhos levemente flexionados, até que
+                                        elas fiquem paralelas ao chão. Depois, deve baixá-las de forma controlada até a
+                                        posição inicial.<br>
+
+                                        O leg horizontal pode ser realizado com diferentes níveis de resistência,
+                                        variando o peso adicionado aos tornozelos ou utilizando uma banda elástica. Além
+                                        disso, a posição dos pés pode ser variada para enfatizar diferentes grupos
+                                        musculares</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3  " id="card4">
+                            <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/posterior-peck-deck.gif" class="card-img-top mw-100 "
+                                alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Posterior no "peck deck"</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card4', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard4" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard4">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O treino de
+                                        pernas é um conjunto de exercícios de musculação que tem como objetivo
+                                        fortalecer e tonificar os músculos das pernas, incluindo os quadríceps,
+                                        isquiotibiais, panturrilhas e glúteos. Alguns dos exercícios mais comuns em um
+                                        treino de pernas incluem agachamentos, levantamento terra, leg press, avanço,
+                                        flexor deitado, extensora de pernas e panturrilha em pé. Cada exercício tem como
+                                        alvo um grupo muscular específico e pode ser modificado para atender às
+                                        necessidades do indivíduo, como a utilização de diferentes pesos, repetições,
+                                        posições e equipamentos. O treino de pernas é essencial para quem busca um corpo
+                                        equilibrado e saudável, além de contribuir para melhorar a postura e prevenir
+                                        lesões. É importante realizar os exercícios com a técnica correta e sob a
+                                        orientação de um profissional de educação física para obter os melhores
+                                        resultados e evitar lesões.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card5"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/rosca-direta-na-polia.webp" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Rosca direta no cross</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card5', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard5" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard5">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                        1- Comece ajustando uma polia baixa com uma barra reta acoplada a ela e
+                                        selecione
+                                        um peso adequado para o seu nível de força. Ajuste a altura da polia de modo que
+                                        ela fique um pouco abaixo da altura dos joelhos.<br>
+                                        2- Fique em pé com os pés afastados na largura dos ombros e mantenha uma leve
+                                        flexão nos joelhos. Agarre a barra com as mãos afastadas na largura dos ombros,
+                                        com as palmas das mãos voltadas para cima.<br>
+                                        3- Mantenha os braços estendidos e as costas retas. Essa será a sua posição
+                                        inicial.<br>
+                                        4- Expire e puxe a barra em direção ao peito, dobrando os cotovelos e mantendo
+                                        os
+                                        braços próximos ao corpo.<br>
+                                        5- Contraia os músculos do bíceps enquanto puxa a barra. Mantenha os cotovelos
+                                        estáveis e evite balançar o corpo durante o movimento.<br>
+                                        6- Pause por um segundo no topo da contração, sentindo a tensão nos músculos do
+                                        bíceps.<br>
+                                        7- Inspire e retorne lentamente a barra à posição inicial, estendendo
+                                        completamente
+                                        os braços e alongando os músculos do bíceps.<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card123"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/rosca-alternada-halter.gif" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Rosca alternada</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card123', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard123" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard123">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                        De pé, segurar um halter em cada mão, com pegada supinada (palma da mão virada
+                                        para cima).<br>
+                                        Flexionar um dos braços trazendo-o para cima até contrair ao máximo o
+                                        bíceps.<br>
+                                        Estender o braço de maneira controlada, ao mesmo tempo que se flexiona o
+                                        outro.<br>
+                                        Alternar o movimento entre os braços até alcançar o número desejado de
+                                        repetições.<br>
+
+
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card678"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/rosca-inversa-barra-w.gif" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Rosca inverso</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 12</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card678', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard678" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard678">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                        1- Comece por escolher uma barra W e carregue-a com um peso adequado ao seu
+                                        nível
+                                        de força. Em seguida, fique em pé com os pés afastados na largura dos ombros e
+                                        segure a barra com as palmas das mãos voltadas para baixo, em uma pegada
+                                        pronada.<br>
+
+                                        2- Mantenha os cotovelos próximos ao corpo e os braços estendidos. Essa será a
+                                        sua
+                                        posição inicial.<br>
+
+                                        3-Inspire e comece a puxar a barra em direção ao seu corpo, dobrando os
+                                        cotovelos
+                                        e levando a barra em direção ao seu peito.<br>
+
+                                        4- Contraia os músculos dos antebraços e dos bíceps enquanto levanta a barra.
+                                        Mantenha os cotovelos próximos ao corpo e evite balançar o corpo durante o
+                                        movimento.<br>
+
+                                        5- Pause por um segundo no topo da contração, sentindo a tensão nos músculos dos
+                                        braços.<br>
+
+                                        6- Expire e abaixe lentamente a barra à posição inicial, estendendo
+                                        completamente
+                                        os braços e alongando os músculos dos antebraços.<br>
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card06"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="../Img/imgtreino/Treino_C/rosca-concentrada-unilateral-com-halter.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Rosca concentrada</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card06', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard06" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard06">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                        Primeiro, sente-se na ponta de um banco com as pernas afastadas e segure um
+                                        halter em uma das mãos;<br>
+                                        Os joelhos devem estar flexionados e os pés firmes no chão. O cotovelo da mão
+                                        que segura o peso deve ser apoiado na parte interna da coxa, que fica perto do
+                                        joelho, e estar estendido. A pegada é com a mão virada em direção à outra
+                                        coxa;<br>
+                                        Enquanto isso, a mão livre deve ser apoiada na outra coxa para ajudar a dar
+                                        estabilidade ao corpo;<br>
+                                        Depois, eleve o halter, fazendo o movimento de flexão do cotovelo, até que a
+                                        carga se aproxime do ombro. Toda a força deve ficar concentrada no bíceps;<br>
+                                        Segure a contração por alguns instantes, então, desça o halter de modo
+                                        controlado e retorne à posição original;<br>
+                                        É importante não mexer o corpo durante o exercício, somente o antebraço é que
+                                        deve se movimentar.
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                        <div class="card mt-3 mb-3 " id="card6"> <!-- sempre lembrar de alterar o id "Card"-->
+                            <img src="https://via.placeholder.com/350x200.png?text=Imagem+indisponível"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title m-0 h4 text-align-star">Puxador alto no cross</h5>
+                                <p class="card-text text-warning m-0 h5">4 X 10</p>
+                                <div class="m-0 text-muted h6">
+                                    <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 6 min.</p>
+                                    <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                        quantidade de peso.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn btn-warning"
+                                        onclick="changeBorderColor('card6', this)">Finalizar
+                                        exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                    <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                        href="#collapseCard6" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Como executar</a>
+                                    <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseCard6">
+                                <!-- sempre lembrar de alterar o id "#collapseCard3"-->
+                                <div class="card card-body">
+                                    <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">
+                                        Puxador alto no cross é um exercício de treinamento de força que trabalha os
+                                        músculos das costas e dos braços. Ele é realizado em uma máquina chamada
+                                        “pulley” ou “cross over” que possui uma polia alta e uma barra de puxada. O
+                                        objetivo do exercício é puxar a barra para baixo em direção ao corpo, mantendo
+                                        os cotovelos estendidos e as costas retas.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+
+
+                </div><!-- Inicio da linha que engloba o treino principal -->
+
+            </div><!-- Fim do container que engloba o treino principal -->
+
+        </div><!-- Fim da linha principal -->
+
+    </div> <!-- Fim dos cards de treino principal -->
+
+
+    <div class="container-fluid"><!-- container abdominal -->
+        <h4 class="bg-2 p-4 mb-3 text-muted h5">Abdominal.</h4>
+    </div> <!-- container abdominal -->
+
+    <section>
+        <div class="container"><!-- Inicio dos cards -->
+
+            <div class="row"> <!-- Inicio da linha Abdominal -->
+
+                <div class="container"><!-- Inicio do container que engloba o treino Abdominal -->
+
+                    <div class="row"><!-- Inicio da linha que engloba o treino Abdominal -->
+
+                        <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                            <div class="card mt-3 mb-3 " id="card9"> <!-- sempre lembrar de alterar o id "Card"-->
+                                <img src="../Img/imgtreino/Treino_C/abdominal-no-chao-com-elevacao-de-pernas-semi-dobradas.webp"
+                                    class="card-img-top" alt="Elevação de pernas (zig-zag).">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 h4 text-align-star">Elevação de pernas (zig-zag).</h5>
+                                    <p class="card-text text-warning m-0 h5">3 X 20</p>
+                                    <div class="m-0 text-muted h6">
+                                        <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 4 min.</p>
+                                        <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                            postura.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <button type="button" class="btn btn-warning"
+                                            onclick="changeBorderColor('card9', this)">Finalizar
+                                            exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                        <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                            href="#collapseCard9" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">Como executar</a>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapseCard9">
+                                    <div class="card card-body">
+                                        <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">Sentar
+                                            em um
+                                            O abdominal levantamento de pernas é um exercício que tem como objetivo
+                                            trabalhar os músculos abdominais inferiores. É realizado deitado em um
+                                            colchonete, com as pernas estendidas e os braços apoiados no chão ao lado do
+                                            corpo. A partir dessa posição, as pernas são levantadas juntas em direção ao
+                                            teto, mantendo-as retas ou ligeiramente flexionadas nos joelhos. Os músculos
+                                            abdominais são contraídos para manter o controle do movimento enquanto as
+                                            pernas
+                                            são abaixadas lentamente até a posição inicial.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                        <div class="col-md-3"><!-- Inicio dos cards (copiar sempre dessa linha) -->
+                            <div class="card mt-3 mb-3 " id="card10"> <!-- sempre lembrar de alterar o id "Card"-->
+                                <img src="../Img/imgtreino/Treino_C/abdominal-alternado-no-chao.webp"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0 h4 text-align-star">Abdominal Obliquo</h5>
+                                    <p class="card-text text-warning m-0 h5">3 X 20</p>
+                                    <div class="m-0 text-muted h6">
+                                        <p class="m-0"><i class="las la-clock"></i> Tempo extimado: 4 min.</p>
+                                        <p class="mb-4"><i class="las la-exclamation-triangle"></i> Sempre verificar a
+                                            postura.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <button type="button" class="btn btn-warning"
+                                            onclick="changeBorderColor('card10', this)">Finalizar
+                                            exercício</button><!-- sempre lembrar de alterar o id "Card"-->
+                                        <a class="btn btn-outline-warning btn-sm mt-2" data-bs-toggle="collapse"
+                                            href="#collapseCard10" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">Como executar</a>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapseCard10">
+                                    <div class="card card-body">
+                                        <p class="card-text mb-1 text-monospace text-sm-start text-break 2h-sm">O supino
+                                            Antes de mais nada, deite-se em um colchonete ou tapete de exercícios com as
+                                            costas voltadas para o chão. Em seguida, dobre os joelhos e mantenha a sola
+                                            do pé no chão. Então, cruze as mãos abaixo da cabeça deixando os cotovelos
+                                            para fora.<br>
+                                            Comece o abdominal elevando um joelho de cada vez em direção ao cotovelo. Ao
+                                            mesmo tempo, incline o tronco para cima e gire suavemente os ombros de modo
+                                            que seu cotovelo direito toque seu joelho esquerdo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Fim dos cards (copiar sempre até essa linha) -->
+
+                    </div><!-- Inicio da linha que engloba o treino Abdominal -->
+
+                </div><!-- Fim do container que engloba o treino Abdominal -->
+
+            </div><!-- Fim da linha Abdominal -->
+
+        </div> <!-- Fim dos cards de treino Abdominal -->
+    </section>
+
+    <a href="#top" class="icon scroll-to-top"><i class="las la-arrow-up"></i></a>
+
+    <footer class="bg-light"><!-- container Desenvolvedor-->
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    Desenvolvido por<a href="https://www.instagram.com/victtorsantos3l/" class="text-muted">
+                        Victtor Santos</a>
+                </div>
+            </div>
+        </div>
+    </footer><!-- container Desenvolvedor -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/app2.js"></script>
+</body>
+
+</html>
